@@ -6,11 +6,20 @@
   height: 76px;
 }
 
+.header__logo {
+  max-width: 200px;
+}
+
 .header__nav-list {
   display: flex;
   list-style: none;
 }
 
+.header__nav-list-item {
+  margin-right: 40px;
+}
+
 .header__nav-container {
   display: flex;
+  align-items: center;
 }

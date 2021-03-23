@@ -12,7 +12,7 @@
   right: 0;
   background-image: url("../img/cover.png");
   opacity: 0.8;
-  z-index: 10;
+  z-index: 1;
 }
 
 .cover__video {
@@ -26,4 +26,59 @@
   object-fit: cover;
   height: 100%;
   width: 100%;
+}
+.cover__content {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: calc(100vh - 76px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cover__tag {
+  color: #fff;
+  font-weight: 800;
+  font-size: 92px;
+  line-height: 111px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.cover__button {
+  width: 334px;
+  min-height: 60px;
+  color: #fff;
+  font-size: 24px;
+  height: 36px;
+  margin-top: 30px;
+  border: 2px solid #fff;
+  border-radius: 60px;
+  background-color: transparent;
+  transition: background-color 0.3s linear;
+  cursor: pointer;
+}
+
+.cover__button:hover {
+  background-color: #613a93;
+}
+
+.cover__scroll {
+  background-color: transparent;
+  border: none;
+  transition: opacity 0.3s linear;
+  cursor: pointer;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.cover__scroll:hover {
+  opacity: 0.8;
+}
+
+.cover__scroll:focus {
+  outline: unset;
 }

@@ -1,0 +1,29 @@
+.stories__card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 40px;
+  row-gap: 70px;
+}
+
+.stories__button {
+  display: block;
+  padding: 30px 0;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+  background-color: #fbfbfb;
+  transition: background-color 0.3s linear;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+}
+
+.stories__button:hover {
+  background-color: #f8f8f8;
+}
+
+.stories__button:focus {
+  outline: unset;
+}
