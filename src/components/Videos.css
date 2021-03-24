@@ -1,6 +1,6 @@
 .videos {
-  max-width: 1320px;
-  padding: 100px 60px 74px;
+  padding-top: 100px;
+  padding-bottom: 74px;
   margin: auto;
   min-height: 50%;
 }
@@ -13,20 +13,11 @@
 .videos__text {
   max-width: 400px;
   margin-right: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.videos__title {
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 36px;
-}
-
-.videos__paragraph {
-  color: #666;
-  max-width: 340px;
-  font-size: 18px;
-  line-height: 22px;
-}
 .videos__button {
   width: 40px;
   height: 40px;
@@ -48,9 +39,17 @@
   display: flex;
   width: 100%;
   flex-direction: column;
+  margin: 0;
 }
 .videos__iframe {
-  min-height: calc(100% - 30px);
+  min-height: 100%;
+  border: none;
+  margin-bottom: 10px;
+}
+.videos__iframe-caption {
+  font-size: 12px;
+  line-height: 16px;
+  color: #666;
 }
 
 .videos__footer {
@@ -62,6 +61,7 @@
   font-size: 30px;
   line-height: 43px;
   text-transform: uppercase;
+  margin-top: 74px;
 }
 .videos__footer-text {
   margin: 0;

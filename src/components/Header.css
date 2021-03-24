@@ -10,6 +10,10 @@
   max-width: 200px;
 }
 
+.header__logo-container {
+  display: flex;
+}
+
 .header__nav-list {
   display: flex;
   list-style: none;

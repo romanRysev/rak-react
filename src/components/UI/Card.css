@@ -1,6 +1,25 @@
 .card {
 }
 
+.card__link-container {
+  text-decoration: none;
+}
+
+.card__paragraph {
+  font-size: 14px;
+  line-height: 18px;
+  color: #666;
+}
+
+.card__title {
+  margin-bottom: 14px;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1;
+  color: #000;
+  word-break: break-word;
+}
+
 .card__img-container {
   position: relative;
   display: block;

@@ -1,0 +1,53 @@
+.tell-your-story {
+  background-color: #f7f7f7;
+  padding: 100px 0;
+}
+.tell-your-story__title {
+  max-width: 400px;
+}
+
+.tell-your-story__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tell-your-story__left-column {
+  max-width: 340px;
+}
+
+.tell-your-story__right-column {
+  display: flex;
+}
+
+.tell-your-story__option {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 640px;
+  min-height: 215px;
+}
+
+.tell-your-story__switch-container {
+  list-style: none;
+  padding: 0;
+  margin-right: 40px;
+  min-width: 100px;
+}
+
+.tell-your-story__switch {
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: color 0.3s linear;
+  color: #a2a2a2;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.tell-your-story__switch:hover {
+  color: #000;
+}
+
+.tell-your-story__switch_active {
+  cursor: default;
+  color: #000;
+}

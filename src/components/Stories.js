@@ -55,7 +55,7 @@ function Stories(props) {
 
   return (
     <section className="stories container">
-      <h2>Истории неизлечимых привычек</h2>
+      <h2 className="stories__title title">Истории неизлечимых привычек</h2>
       <div className="stories__card-container">
         {cards.map((card, i) => {
           return (

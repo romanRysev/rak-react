@@ -1,6 +1,7 @@
 .container {
-  padding: 0 50px;
+  padding: 0 60px;
   max-width: 1440px;
+  margin: auto;
 }
 
 .link {
@@ -24,4 +25,16 @@
 
 .link_active:hover {
   opacity: 1;
+}
+
+.paragraph {
+  font-size: 18px;
+  line-height: 22px;
+  color: #666;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 36px;
 }

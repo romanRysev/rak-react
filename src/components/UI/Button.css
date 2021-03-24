@@ -6,11 +6,17 @@
   cursor: pointer;
   color: #fff;
   background-color: #613a93;
-  width: 218px;
-  height: 44px;
   transition: opacity 0.3s linear;
 }
 
+.button_size_s {
+  width: 218px;
+  height: 44px;
+}
+.button_size_m {
+  width: 280px;
+  height: 52px;
+}
 button:hover {
   opacity: 0.8;
 }

@@ -1,0 +1,33 @@
+.instagram {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.instagram__header {
+  background: #613a93;
+  padding: 20px 60px;
+  margin-bottom: 100px;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  line-height: 43px;
+  text-transform: uppercase;
+}
+
+.instagram__content {
+  max-width: 340px;
+}
+
+.instagram__title-link {
+  text-decoration: none;
+  border-bottom: 1px solid #000;
+  transition: opacity 0.3s linear;
+  color: #000;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 36px;
+}
+
+.instagram__title-link:hover {
+  opacity: 0.8;
+}
