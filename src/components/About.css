@@ -1,0 +1,45 @@
+.about {
+  min-height: 960px;
+  background-color: #613a93;
+  overflow: hidden;
+  color: #dedede;
+}
+
+.about__title {
+  margin-bottom: 70px;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 77px;
+  text-align: center;
+  color: #fff;
+}
+
+.about__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about__left-column {
+  max-width: 340px;
+}
+
+.about__left-column-text {
+  font-size: 18px;
+  line-height: 22px;
+  margin: 0 0 32px;
+}
+
+.about__subtitle {
+  max-width: 413px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 36px;
+  color: #fff;
+  margin: 0 0 32px;
+}
+
+.about__option {
+  max-width: 640px;
+  font-size: 18px;
+  line-height: 22px;
+}

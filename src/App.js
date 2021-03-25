@@ -7,6 +7,8 @@ import Stories from "./components/Stories";
 import Instagram from "./components/Instagram";
 import TellYourStory from "./components/TellYourStory";
 import Policy from "./components/Policy";
+import Statistic from "./components/Statistic";
+import About from "./components/About";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 function App() {
@@ -22,6 +24,8 @@ function App() {
               <Stories />
               <Instagram />
               <TellYourStory />
+              <Statistic />
+              <About />
             </main>
           </Route>
           <Route path="/stories">

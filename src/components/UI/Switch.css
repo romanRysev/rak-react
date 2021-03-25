@@ -1,0 +1,46 @@
+.switch-component {
+  display: flex;
+}
+
+.switch-container {
+  list-style: none;
+  padding: 0;
+  margin-right: 40px;
+  min-width: 100px;
+}
+
+.switch {
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: color 0.3s linear;
+  color: #a2a2a2;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.switch_theme_light {
+  color: #c9c9c9;
+}
+
+.switch_theme_dark {
+  color: #a2a2a2;
+}
+.switch_theme_dark:hover {
+  color: #000;
+}
+
+.switch_theme_light:hover {
+  color: #fff;
+}
+
+.switch_active {
+  cursor: default;
+}
+
+.switch_active_theme_light {
+  color: #fff;
+}
+
+.switch_active_theme_dark {
+  color: #000;
+}

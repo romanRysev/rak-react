@@ -1,23 +1,28 @@
 import "./TellYourStory.css";
 import Button from "./UI/Button";
-import React, { useState } from "react";
+import Switch from "./UI/Switch";
 
 function TellYourStory() {
-  const [firstIsActive, setActive] = useState(true);
+  const firstContent = (
+    <div className="tell-your-story__option">
+      <p className="paragraph">
+        Заполните подробную форму прямо на сайте, и мы опубликуем вашу историю
+        после проверки. Пожалуйста, заполняйте все пункты корректно. Если вы
+        испытаете какие-то сложности, воспользуйтесь вторым вариантом.
+      </p>
+      <Button text="Заполнить форму" class="button_size_m" />
+    </div>
+  );
 
-  function handleSwitch(isFirst, event) {
-    console.log(arguments);
-    setActive(isFirst);
-    event.target.classList.add("tell-your-story__switch_active");
-    event.target.nextElementSibling
-      ? event.target.nextElementSibling.classList.remove(
-          "tell-your-story__switch_active"
-        )
-      : event.target.previousElementSibling.classList.remove(
-          "tell-your-story__switch_active"
-        );
-  }
-
+  const secondContent = (
+    <div className="tell-your-story__option">
+      <p className="paragraph">
+        Оставить контакт (почту или номер телефона) и мы свяжемся с вами,
+        зададим вопросы, уточним детали вашей истории.
+      </p>
+      <Button text="Оставить контакт" class="button_size_m" />
+    </div>
+  );
   return (
     <section className="tell-your-story">
       <div className="tell-your-story__title-container container">
@@ -34,39 +39,13 @@ function TellYourStory() {
           </p>
         </div>
         <div className="tell-your-story__right-column">
-          <ul className="tell-your-story__switch-container">
-            <li
-              className="tell-your-story__switch tell-your-story__switch_active"
-              onClick={($event) => handleSwitch(true, $event)}
-            >
-              1-й вариант
-            </li>
-            <li
-              className="tell-your-story__switch"
-              onClick={($event) => handleSwitch(false, $event)}
-            >
-              2-й вариант
-            </li>
-          </ul>
-          {firstIsActive ? (
-            <div className="tell-your-story__option">
-              <p className="paragraph">
-                Заполните подробную форму прямо на сайте, и мы опубликуем вашу
-                историю после проверки. Пожалуйста, заполняйте все пункты
-                корректно. Если вы испытаете какие-то сложности, воспользуйтесь
-                вторым вариантом.
-              </p>
-              <Button text="Заполнить форму" class="button_size_m" />
-            </div>
-          ) : (
-            <div className="tell-your-story__option">
-              <p className="paragraph">
-                Оставить контакт (почту или номер телефона) и мы свяжемся с
-                вами, зададим вопросы, уточним детали вашей истории.
-              </p>
-              <Button text="Оставить контакт" class="button_size_m" />
-            </div>
-          )}
+          <Switch
+            firstTitle="1-й вариант"
+            secondTitle="2-й вариант"
+            firstContent={firstContent}
+            secondContent={secondContent}
+            switchTheme="dark"
+          />
         </div>
       </div>
     </section>
