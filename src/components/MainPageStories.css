@@ -1,15 +1,8 @@
-.stories__card-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  column-gap: 40px;
-  row-gap: 70px;
-}
-
-.stories__title {
+.main-page-stories__title {
   max-width: 413px;
 }
 
-.stories__button {
+.main-page-stories__button {
   display: block;
   padding: 30px 0;
   font-size: 16px;
@@ -25,10 +18,10 @@
   margin-top: 70px;
 }
 
-.stories__button:hover {
+.main-page-stories__button:hover {
   background-color: #f8f8f8;
 }
 
-.stories__button:focus {
+.main-page-stories__button:focus {
   outline: unset;
 }

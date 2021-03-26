@@ -4,6 +4,7 @@
   margin: auto;
   justify-content: space-between;
   height: 76px;
+  border-bottom: 1px solid #e8e8e8;
 }
 
 .header__logo {

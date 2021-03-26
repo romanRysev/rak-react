@@ -1,0 +1,32 @@
+.pagination {
+  display: flex;
+  padding: 50px 0;
+  margin: auto;
+}
+
+.pagination__item {
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 18px;
+  outline: none;
+  transition: all 0.3s linear;
+  background-color: #fbfbfb;
+  width: 58px;
+  height: 58px;
+  line-height: 58px;
+}
+
+.pagination__item:hover {
+  background-color: #f4f4f4;
+}
+
+.pagination__item_active {
+  background-color: #613a93;
+  color: #fff;
+  cursor: default;
+}
+
+.pagination__item_active:hover {
+  background-color: #613a93;
+}
