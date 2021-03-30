@@ -21,7 +21,7 @@ function Main(props) {
         <Statistic />
         <About />
       </main>
-      <Footer />
+      <Footer></Footer>
     </>
   );
 }

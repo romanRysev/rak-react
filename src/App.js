@@ -4,7 +4,9 @@ import Policy from "./pages/Policy";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Main from "./pages/Main";
 import Stories from "./pages/Stories";
-import ModalWindow from "./components/ModalWindow";
+import ModalWindowWrap from "./components/ModalWindowWrap";
+import store from "./store/store";
+import { Provider } from "react-redux";
 
 function App() {
   const cards = [
@@ -59,22 +61,24 @@ function App() {
   ];
 
   return (
-    <div className="app">
-      <BrowserRouter>
-        <Switch>
-          <Route exact path="/">
-            <Main cards={cards} />
-          </Route>
-          <Route path="/stories">
-            <Stories cards={cards} />
-          </Route>
-          <Route path="/policy">
-            <Policy />
-          </Route>
-        </Switch>
-      </BrowserRouter>
-      <ModalWindow />
-    </div>
+    <Provider store={store}>
+      <div className="app">
+        <BrowserRouter>
+          <Switch>
+            <Route exact path="/">
+              <Main cards={cards} />
+            </Route>
+            <Route path="/stories">
+              <Stories cards={cards} />
+            </Route>
+            <Route path="/policy">
+              <Policy />
+            </Route>
+          </Switch>
+        </BrowserRouter>
+        <ModalWindowWrap />
+      </div>
+    </Provider>
   );
 }
 
